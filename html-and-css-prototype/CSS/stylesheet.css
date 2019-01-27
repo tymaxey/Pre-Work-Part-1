@@ -1,36 +1,30 @@
 /* Global resets */
 * {
-	box-sizing: border-box;
-	margin: 0;
-	padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-	font-family: "rooney-sans", Avenir-Book, Calibri, sans-serif;
-	color: #424242;
-	line-height: 1.4;
+  font-family: "rooney-sans", Avenir-Book, Calibri, sans-serif;
+  color: #424242;
+  line-height: 1.4;
 }
 
 /* Fonts */
 h1 {
-	font-family: "rooney-web", "AmericanTypewriter", Rockwell, serif;
-	font-size: 2.5em;
-	font-weight: bold;
+  font-family: "rooney-web", 'AmericanTypewriter', Rockwell, serif;
+  font-size: 2.5em;
+  font-weight: bold;
 }
 
 .container {
-	margin: 2em auto;
-	max-width: 630px;
-	text-align: center;
+  margin: 2em auto;
+  max-width: 630px;
+  text-align: center;
 }
 
-/* The following font information and color codes are provided for you.  They do not match the prototype exactly, but they are fine to use for the assignment and doing so does not count against you.  They are simply meant to help you save time.  We would like everyone to have as close to a pixel-perfect match to the prototype as possible.  If you do find a font/color that matches more precisely, please share it with the team so we can improve the activity for future applicants.  Thank you!  Happy coding!
-
-	FONTS:
-	font-family: "rooney-sans", Avenir-Book, Calibri, sans-serif;
-	font-family: "rooney-web", "AmericanTypewriter", Rockwell, serif;
-
-  COLORS:
+/* COLORS:
   blue: #20A1D4;
   green: #1CBC2C;
   orange: #EF5F3C;
@@ -38,5 +32,162 @@ h1 {
   grey: #777;
   light grey: #eaeaea;
 */
+/* Your CSS goes here */
+hr {
+  margin: 100px 100px;
+  border: 0;
+}
 
-/* Your CSS code goes here */
+.main {
+  position: relative;
+  text-align: left;
+  width: 280px;
+  margin: 0 auto;
+  border: 1px solid #eaeaea;
+  box-shadow: 0 2px #f5f5f5;
+  padding: 25px;
+  box-sizing: border-box;
+}
+
+.main .banner {
+  position: absolute;
+  top: -50px;
+  width: 100%;
+  left: 0;
+  border-radius: 3px;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  font-size: .85rem;
+  background-color: #424242;
+}
+
+.main .donation-tracker {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 10px;
+  background-color: #f5f5f5;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.donations {
+  background-color: #EF5F3C;
+  width: 70%;
+  height: 100%;
+}
+
+.main p {
+  font-size: .75rem;
+  font-weight: 100;
+  color: #777;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.orange {
+  color: #EF5F3C;
+}
+
+.main form {
+  font-size: 0;
+  position: relative;
+}
+
+.main p:not(:first-child) {
+  margin: 20px 0;
+}
+
+.main form .prefix {
+  font-size: 1rem;
+  position: absolute;
+  top: 15px;
+  left: 10px;
+  color: #888;
+  font-family: sans-serif;
+}
+
+.main form input {
+  font-size: 1rem;
+  display: inline-block;
+  width: 47%;
+  padding: 15px 15px 15px 22px;
+  border-radius: 3px;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  margin-right: 3%;
+  font-weight: 700;
+}
+
+.main form button {
+  font-size: 1rem;
+  display: inline-block;
+  background-color: #1CBC2C;
+  width: 47%;
+  margin-left: 3%;
+  border: 0;
+  color: white;
+  font-family: "rooney-sans", Avenir-Book, Calibri, sans-serif;
+  padding: 15px 0;
+  font-weight: 700;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+
+.main blue {
+  color: #20A1D4;
+  font-size: .75rem;
+  font-style: italic;
+  font-weight: 100;
+  text-decoration: none;
+}
+
+.bold {
+  font-weight: 700;
+  letter-spacing: .5px;
+}
+
+.orange {
+  color: #EF5F3C;
+}
+
+.row {
+  display: flex;
+  align-items: stretch;
+  align-content: stretch;
+}
+
+.row .col {
+  box-sizing: border-box;
+}
+
+.row .col:not(:last-child) {
+  padding-right: 5px;
+}
+
+.row .col:not(:first-child) {
+  padding-left: 5px;
+}
+
+.col {
+  flex: 1 1 auto;
+}
+
+.col button {
+  width: 100%;
+  background-color: #FAFAFA;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  padding: 10px;
+  color: #777;
+  font-weight: 600;
+  box-shadow: 0 1px #ddd;
+}
+
+.with-card {
+  width: 263px;
+  margin: 12px auto 0;
+}
